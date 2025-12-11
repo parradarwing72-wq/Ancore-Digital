@@ -28,6 +28,11 @@ const services = [
     description: 'Building secure and transparent blockchain solutions including smart contracts, DeFi platforms, NFTs, and decentralized applications to revolutionize business operations.',
     icon: '⛓️',
   },
+  {
+    title: 'DevOps',
+    description: 'Streamlining software development and deployment processes with CI/CD pipelines, containerization, cloud infrastructure, and automated monitoring solutions.',
+    icon: '🚀',
+  },
 ]
 
 export default function Services() {
