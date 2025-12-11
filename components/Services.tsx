@@ -22,7 +22,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-32 bg-white">
+    <section id="services" className="py-32 bg-black">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -31,10 +31,10 @@ export default function Services() {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
-          <h2 className="text-5xl md:text-6xl font-bold text-black mb-4">
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">
             Our Services
           </h2>
-          <p className="text-xl text-black/60 max-w-2xl mx-auto">
+          <p className="text-xl text-white/60 max-w-2xl mx-auto">
             Comprehensive IT solutions tailored to your business needs
           </p>
         </motion.div>
@@ -48,13 +48,13 @@ export default function Services() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.2, duration: 0.8 }}
               whileHover={{ y: -10 }}
-              className="p-8 rounded-2xl border border-black/10 hover:border-black/30 transition-all bg-white hover:shadow-xl"
+              className="p-8 rounded-2xl border border-white/10 hover:border-white/30 transition-all bg-white/5 backdrop-blur-sm hover:bg-white/10 hover:shadow-xl"
             >
               <div className="text-5xl mb-6">{service.icon}</div>
-              <h3 className="text-2xl font-bold text-black mb-4">
+              <h3 className="text-2xl font-bold text-white mb-4">
                 {service.title}
               </h3>
-              <p className="text-black/60 leading-relaxed">
+              <p className="text-white/60 leading-relaxed">
                 {service.description}
               </p>
             </motion.div>

@@ -13,7 +13,7 @@ export default function TeamMemberImage({ src, alt, className }: TeamMemberImage
   const [imgSrc, setImgSrc] = useState(src)
   const [hasError, setHasError] = useState(false)
 
-  const fallbackSrc = `https://ui-avatars.com/api/?name=${encodeURIComponent(alt)}&size=400&background=000000&color=ffffff`
+  const fallbackSrc = `https://ui-avatars.com/api/?name=${encodeURIComponent(alt)}&size=400&background=1a1a1a&color=ffffff`
 
   return (
     <Image
