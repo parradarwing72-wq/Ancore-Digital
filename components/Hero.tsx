@@ -24,21 +24,6 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1, duration: 0.8 }}
-            className="flex justify-center mb-8"
-          >
-            <Image
-              src="/assets/logo/ancore-digital-logo-dark.svg"
-              alt="Ancore Digital Logo"
-              width={300}
-              height={100}
-              className="w-64 md:w-80 lg:w-96 h-auto"
-              priority
-            />
-          </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
