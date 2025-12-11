@@ -42,7 +42,7 @@ export default function Navigation() {
           </motion.div>
           
           <div className="hidden md:flex items-center space-x-8">
-            {['Services', 'Technologies', 'Team', 'Contact'].map((item) => (
+            {['Services', 'Projects', 'Technologies', 'Team', 'Contact'].map((item) => (
               <motion.button
                 key={item}
                 whileHover={{ scale: 1.05 }}
