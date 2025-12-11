@@ -10,29 +10,9 @@ const teamMembers = [
     image: '/assets/people/CEO.jpg',
   },
   {
-    name: 'Developer 2',
-    role: 'Senior Full-Stack Developer',
-    image: '/assets/people/developer1.jpg',
-  },
-  {
-    name: 'Developer 3',
-    role: 'Mobile App Developer',
-    image: '/assets/people/developer2.jpg',
-  },
-  {
-    name: 'Developer 4',
-    role: 'AI/ML Engineer',
-    image: '/assets/people/developer3.jpg',
-  },
-  {
-    name: 'Developer 5',
-    role: 'Blockchain Developer',
-    image: '/assets/people/developer4.jpg',
-  },
-  {
-    name: 'Developer 6',
-    role: 'UI/UX Designer & Developer',
-    image: '/assets/people/developer5.jpg',
+    name: 'CTO',
+    role: 'Chief Technology Officer',
+    image: '/assets/people/CTO.jpg',
   },
 ]
 
@@ -51,11 +31,11 @@ export default function Team() {
             Our Team
           </h2>
           <p className="text-xl text-white/60 max-w-2xl mx-auto">
-            Six dedicated developers committed to delivering innovative solutions
+            Leadership team committed to delivering innovative solutions
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {teamMembers.map((member, index) => (
             <motion.div
               key={member.name}

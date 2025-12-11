@@ -18,6 +18,16 @@ const services = [
     description: 'Implementing advanced artificial intelligence and machine learning solutions to drive business intelligence, automation, and intelligent decision-making.',
     icon: '🤖',
   },
+  {
+    title: 'UI/UX Design',
+    description: 'Creating intuitive and visually stunning user interfaces and experiences that engage users and drive conversions. User research, wireframing, and prototyping.',
+    icon: '🎨',
+  },
+  {
+    title: 'Blockchain Development',
+    description: 'Building secure and transparent blockchain solutions including smart contracts, DeFi platforms, NFTs, and decentralized applications to revolutionize business operations.',
+    icon: '⛓️',
+  },
 ]
 
 export default function Services() {
@@ -39,7 +49,7 @@ export default function Services() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
