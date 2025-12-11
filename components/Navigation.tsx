@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false)
@@ -35,10 +36,19 @@ export default function Navigation() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="text-2xl font-bold text-white cursor-pointer"
+            className="flex items-center gap-3 cursor-pointer"
             onClick={() => scrollToSection('hero')}
           >
-            Ancore Digital
+            <Image
+              src="/assets/logo/ancore-digital-icon.svg"
+              alt="Ancore Digital Logo"
+              width={40}
+              height={40}
+              className="w-10 h-10"
+            />
+            <span className="text-2xl font-bold text-white hidden sm:block">
+              Ancore Digital
+            </span>
           </motion.div>
           
           <div className="hidden md:flex items-center space-x-8">
